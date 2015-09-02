@@ -1,6 +1,9 @@
-language: objective-c
+language: nodejs
 os: osx
 osx_image: xcode7
+
+before_install:
+  - brew install nvm
 
 script:
   - uname -a
