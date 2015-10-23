@@ -1,16 +1,12 @@
 language: objective-c
+osx_image: xcode7.1
 
-matrix:
-  include:
-    - osx_image: xcode7.1
-    - osx_image: xcode7
-    - osx_image: osx10.11
+before_install:
+  - brew update && brew tap nviennot/tmate && brew install tmate
+  - tmate -S /tmp/tmate.sock new-session -d
+  - tmate -S /tmp/tmate.sock wait tmate-ready
+  - tmate -S /tmp/tmate.sock display -p '#{tmate_ssh}'
 
 script:
-  - uname -a
-  - fastlane --version
-  - motion --version
-  - pod --version
-  - xctool --version
-  - xcpretty --version
+  - sleep 6000
 
