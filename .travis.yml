@@ -6,8 +6,8 @@ before_install:
   - brew update && brew tap nviennot/tmate && brew install tmate
   - tmate -S /tmp/tmate.sock new-session -d
   - tmate -S /tmp/tmate.sock wait tmate-ready
-  - tmate -S /tmp/tmate.sock display -p '#{tmate_ssh}'
 
 script:
+  - tmate -S /tmp/tmate.sock display -p '#{tmate_ssh}'
   - sleep 6000
 
