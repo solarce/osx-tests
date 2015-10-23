@@ -1,10 +1,15 @@
-language: nodejs
-os: osx
-osx_image: xcode7
+language: objective-c
 
-before_install:
-  - curl https://gist.githubusercontent.com/solarce/db4d5f9ada5afefffb1b/raw/842092f95ad3f9a46e99317d75b783831e6cfff9/nvm.sh | sh
+matrix:
+  include:
+    - osx_image: xcode7.1
+    - osx_image: xcode7
 
 script:
-  - nvm list
+  - uname -a
+  - fastlane --version
+  - motion --version
+  - pod --version
+  - xctool --version
+  - xcpretty --version
 
