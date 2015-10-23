@@ -9,5 +9,5 @@ before_install:
 
 script:
   - tmate -S /tmp/tmate.sock display -p '#{tmate_ssh}'
-  - sleep 6000
+  - for i in {1..10000}; do echo "how high can we count? $i"; sleep 60; done
 
