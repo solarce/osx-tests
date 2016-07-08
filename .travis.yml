@@ -5,4 +5,6 @@ osx_image: beta-xcode6.4
 script:
   - uname -a
   - xcodebuild -version
+  - echo "yay"
+
 
