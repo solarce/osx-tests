@@ -1,8 +1,8 @@
 language: objective-c
-osx_image: xcode8
+os: osx
+osx_image: beta-xcode-6.4
 
 script:
-  - sysctl -n hw.ncpu
-  - rvm list
-  - nvm list
+  - uname -a
+  - xcodebuild -version
 
