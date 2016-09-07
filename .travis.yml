@@ -6,6 +6,6 @@ script:
   - uname -a
   - xcodebuild -version
   - df -h /
-  - echo "xcode8b6"
+  - echo "xcode8gm"
 
 
