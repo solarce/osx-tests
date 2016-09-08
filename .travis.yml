@@ -6,6 +6,6 @@ script:
   - uname -a
   - xcodebuild -version
   - df -h /
-  - echo "xcode8gm"
+  - echo "xcode8gm with sims"
 
 
