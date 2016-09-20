@@ -1,13 +1,8 @@
 language: objective-c
-
-matrix:
-  include:
-  - os: osx
-    osx_image: xcode8
-  - os: osx
-    osX_image: xcode7.3
+os: osx
 
 script:
+  - uname -a
+  - xcodebuild -version
   - brew update
-  - brew install imagemagick
 
