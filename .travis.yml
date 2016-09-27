@@ -1,5 +1,4 @@
 language: objective-c
-os: osx
 
 matrix:
   include:
@@ -14,7 +13,7 @@ script:
   - xcodebuild -version
   - brew list --versions
   - brew cask list --versions
-  - nvm list
+  - if [[ $(uname -r) == 15.6.0 ]]; then nvm list; else echo "nope"; fi
   - rvm list
   - python2.6 --version
   - python2.7 --version
