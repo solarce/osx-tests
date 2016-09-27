@@ -1,11 +1,24 @@
 language: objective-c
 os: osx
-osx_image: xcode8
+
+matrix:
+  include:
+  - os: osx
+    osx_image: beta-xcode6.1
+  - os: osx
+    osx_image: xcode7.3
 
 script:
   - uname -a
-  - xcodebuild -version
   - df -h /
-  - echo "xcode8gm"
+  - xcodebuild -version
+  - brew list --versions
+  - brew cask list --versions
+  - nvm list
+  - rvm list
+  - python2.6 --version
+  - python2.7 --version
+  - motion --version
+  - pod --version
 
 
