@@ -1,7 +1,14 @@
 #language: cpp
-language: objective-c
+#language: objective-c
 
-os: osx
+matrix:
+  include:
+  - os: osx
+    language: cpp
+    compiler: clang
+  - os: osx
+    language: objective-c
+
 #compiler: clang
 
 install:
