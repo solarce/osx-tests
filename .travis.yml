@@ -1,22 +1,10 @@
-language: objective-c
+language: cpp
 
-matrix:
-  include:
-  - os: osx
-  - os: osx
-    osx_image: xcode7.3
+os: osx
+compiler: clang
+
+install:
+  - gem install xcpretty
 
 script:
-  - uname -a
-  - df -h /
-  - xcodebuild -version
-  - brew list --versions
-  - brew cask list --versions
-  - if [[ $(uname -r) == 15.6.0 ]]; then nvm list; else echo "nope"; fi
-  - rvm list
-  - python2.6 --version
-  - python2.7 --version
-  - motion --version
-  - pod --version
-
-
+  - echo hola
