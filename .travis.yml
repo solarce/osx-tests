@@ -1,7 +1,8 @@
-language: cpp
+#language: cpp
+language: objective-c
 
 os: osx
-compiler: clang
+#compiler: clang
 
 install:
   - gem install xcpretty
