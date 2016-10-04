@@ -12,6 +12,7 @@ matrix:
 #compiler: clang
 
 install:
+  - rvm use 2.1
   - gem install xcpretty
 
 script:
