@@ -9,7 +9,7 @@ matrix:
 
 script:
   - echo I Objective-C what you did there.
-  - uname -a 
+  - uname -a
   - sw_vers -productVersion
   - motion --version
   - nvm
