@@ -1,27 +1,15 @@
----
 language: objective-c
+
 matrix:
-  include: 
-    - osx_image: xcode6.3
-    - osx_image: xcode7.0
-    - osx_image: xcode7.1
-    - osx_image: xcode7.2
+  include:
+  - os: osx
+    osx_image: beta-xcode6.2
+  - os: osx
+    osx_image: beta-xcode6.3
+
+install:
+  - brew update
 
 script:
-  - echo I Objective-C what you did there.
-  - uname -a
-  - sw_vers -productVersion
-  - motion --version
-  - nvm
   - pod --version
-  - xcpretty --version
-  - xctool -version
-  - fastlane --version
-  - carthage version
-  - curl -o doctor.rb https://raw.githubusercontent.com/mislav/ssl-tools/master/doctor.rb
-  - gem install faraday
-  - ruby test_ssl.rb
-  - ruby doctor.rb upload.hockeyapp.net:443
-  - true
-#  - rvm reinstall 2.0.0-p643 --disable-binary
-#  - ruby test_ssl.rb
+
