@@ -8,7 +8,7 @@ matrix:
     osx_image: beta-xcode6.3
 
 install:
-  - brew update
+  - true
 
 script:
   - pod --version
