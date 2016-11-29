@@ -4,12 +4,13 @@ matrix:
   include:
   - os: osx
     osx_image: beta-xcode6.2
-  - os: osx
-    osx_image: beta-xcode6.3
+  - os: linux
+    dist: precise
+    sudo: false
 
 install:
   - true
 
 script:
-  - pod --version
+  - uname -a
 
