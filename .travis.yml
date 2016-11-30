@@ -3,14 +3,15 @@ language: ruby
 matrix:
   include:
   - os: osx
-    osx_image: beta-xcode6.2
-  - os: linux
-    dist: precise
-    sudo: false
+    osx_image: xcode8.1
+  - os: osx
+    osx_image: xcode8.2
 
 install:
   - true
 
 script:
   - uname -a
+  - sysctl hw.ncpu
+  - sysctl hw.memsize
 
