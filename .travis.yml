@@ -13,5 +13,5 @@ script:
   - uname -a
   - sysctl hw.ncpu
   - sysctl hw.memsize
-  - curl https://raw.githubusercontent.com/travis-infrastructure/osx-image-bootstrap/00abc38d5631223c8dc3b7a0909eeed05ca29c5a/simulator-cleaner.rb -o $HOME/simclean.rb
+  - curl https://raw.githubusercontent.com/travis-infrastructure/osx-image-bootstrap/5a14142fb0d8fc5bfd07a82b3a1c6a87d095fe56/simulator-cleaner.rb -o $HOME/simclean.rb
   - ruby $HOME/simclean.rb
