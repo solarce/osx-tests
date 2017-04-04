@@ -5,7 +5,7 @@ matrix:
   - os: osx
     osx_image: xcode8.2simfix
   - os: osx
-    osx_image: xcode8.3
+    osx_image: xcode8.3simfix
 
 
 script:
