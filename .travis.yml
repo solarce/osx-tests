@@ -3,15 +3,10 @@ language: objective-c
 matrix:
   include:
   - os: osx
-    osx_image: xcode8.2
+    osx_image: xcode8.2simfix
   - os: osx
     osx_image: xcode8.3
 
 
 script:
   - xcrun simctl list
-  - uname -a
-  - sysctl hw.ncpu
-  - sysctl hw.memsize
-  - curl https://raw.githubusercontent.com/travis-infrastructure/osx-image-bootstrap/5a14142fb0d8fc5bfd07a82b3a1c6a87d095fe56/simulator-cleaner.rb -o $HOME/simclean.rb
-  - ruby $HOME/simclean.rb
