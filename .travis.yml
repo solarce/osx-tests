@@ -3,9 +3,7 @@ language: objective-c
 matrix:
   include:
   - os: osx
-    osx_image: xcode8.2simfix
-  - os: osx
-    osx_image: xcode8.3simfix
+    osx_image: xcode8.2
 
 
 script:
