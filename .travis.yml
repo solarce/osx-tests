@@ -7,4 +7,6 @@ matrix:
 
 
 script:
+  - uname -a
+  - sw_vers
   - xcrun simctl list
