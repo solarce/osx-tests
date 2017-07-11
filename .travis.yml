@@ -10,3 +10,4 @@ script:
   - uname -a
   - sw_vers
   - xcrun simctl list
+  - xcrun simctl list pairs
