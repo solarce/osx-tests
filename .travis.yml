@@ -9,5 +9,7 @@ matrix:
 script:
   - uname -a
   - sw_vers
+  - xcodebuild -version
   - xcrun simctl list
   - xcrun simctl list pairs
+  - echo "xcode9b4!"
